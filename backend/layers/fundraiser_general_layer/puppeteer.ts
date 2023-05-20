@@ -37,7 +37,7 @@ export const getBalance = async (url: string) => {
         console.log('done');
     
         if (!amountElement) {
-            throw new Error("Failed to fetch Bank data.");
+            throw new Error('Failed to fetch Bank data.');
         }
     
         const amountValue = await amountElement.$eval('span', (element) => element.textContent);

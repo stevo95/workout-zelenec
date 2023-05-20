@@ -35,10 +35,10 @@ const QRSelector = () => {
 
     return (
         <div className='qrSelectorContainer'>
-            <div className="qrSelectorTopSection">
+            <div className='qrSelectorTopSection'>
                 { renderOptions() }
             </div>
-            <div className="qrSelectorBottomSection">
+            <div className='qrSelectorBottomSection'>
                 <img className='qrCode' src={optionsImageUrls[selectedIndex]} alt={`${options[selectedIndex]}€ QR Code`} />
             </div>
         </div>

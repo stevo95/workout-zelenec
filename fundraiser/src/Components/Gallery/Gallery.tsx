@@ -23,8 +23,8 @@ const Gallery = () => {
     
     return (
         <div className={`galleryContainer ${modelClass} paddingInner`}>
-            <div className="arrows" onClick={handlePictureChange}>{"<"}</div>
-            <div className="arrows" onClick={handlePictureChange}>{">"}</div>
+            <div className='arrows' onClick={handlePictureChange}>{'<'}</div>
+            <div className='arrows' onClick={handlePictureChange}>{'>'}</div>
       </div>
     );
 }

@@ -20,10 +20,10 @@ const NavBar = forwardRef(({ isFixed, callback } : NavBarProps) => {
             <img src={Zelenec} alt='Zelenec erb' className='logo'></img>
             </div>
             <div className='navbarRight'>
-            <div onClick={redirectToUrlInNewTab} className="button title textWhite">
+            <div onClick={redirectToUrlInNewTab} className='button title textWhite'>
                 ÚČET
             </div>
-            <div onClick={callback} className="buttonHighlighted title textWhite">
+            <div onClick={callback} className='buttonHighlighted title textWhite'>
                 PRISPIEŤ
             </div>
             </div>

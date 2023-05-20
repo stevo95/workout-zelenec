@@ -1,4 +1,4 @@
-import { LambdaResult, LambdaResultBody } from "./lambdaTypes";
+import { LambdaResult, LambdaResultBody } from './lambdaTypes';
 
 export const lambdaResultHandler = (statusCode: number, body: any): LambdaResult => {
     return {
