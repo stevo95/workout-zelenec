@@ -19,7 +19,6 @@ function App() {
     if (scrollY < 200) {
       setIsFixed(true);
     } else {
-      console.log('sticky')
       setIsFixed(false);
     }
   }

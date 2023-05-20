@@ -54,6 +54,9 @@
     .container {
       width: 80%;
     }
+    .progressSection {
+        width: 95%;
+    }
 }
   
 @media only screen and (max-width: 550px) {

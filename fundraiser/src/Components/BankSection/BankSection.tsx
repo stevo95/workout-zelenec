@@ -36,7 +36,7 @@ const BankSection = forwardRef<HTMLDivElement, {}>((props, ref) => {
                     if (!res) {
                         console.error('fuck');
                     }
-                    const balance = JSON.parse(res.Data.balance);
+                    const balance = JSON.parse(res?.Data?.balance);
                     processBalance(balance);
                     setLoading(false);
                 });

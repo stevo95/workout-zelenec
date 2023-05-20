@@ -24,6 +24,7 @@ const QRSelector = () => {
     const renderOptions = useCallback(() => {
         return options.map((option, index) => (
             <div 
+                key={index}
                 className={index === selectedIndex ? 'selectedPart' : 'selectorPart'}
                 onClick={() => onSelectorClick(index)}
             >

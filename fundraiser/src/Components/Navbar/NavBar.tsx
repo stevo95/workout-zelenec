@@ -1,5 +1,4 @@
 import './NavBar.css';
-import { forwardRef } from 'react';
 import Zelenec from '../../resources/zelenecerb.png'
 import { ACCOUNT_LINK } from '../../Constants';
 
@@ -8,7 +7,7 @@ interface NavBarProps {
     callback: () => void;
 }
 
-const NavBar = forwardRef(({ isFixed, callback } : NavBarProps) => {
+const NavBar = ({ isFixed, callback } : NavBarProps) => {
 
     const redirectToUrlInNewTab = () => {
         window.open(ACCOUNT_LINK, '_blank');
@@ -29,6 +28,6 @@ const NavBar = forwardRef(({ isFixed, callback } : NavBarProps) => {
             </div>
         </div>
     );
-});
+};
 
 export default NavBar;
