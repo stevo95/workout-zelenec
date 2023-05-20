@@ -33,8 +33,9 @@ const BankSection = forwardRef<HTMLDivElement, {}>((props, ref) => {
         if (!balance) {
             getBalance()
                 .then((res) => {
-                    if (!res) {
-                        console.error('fuck');
+                    if (!res?.Data) {
+                        console.error('ERROR: Failed to get balance from bank.');
+                        return;
                     }
                     const balance = JSON.parse(res?.Data?.balance);
                     processBalance(balance);

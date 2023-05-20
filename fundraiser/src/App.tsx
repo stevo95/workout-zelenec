@@ -7,6 +7,7 @@ import MapSection from './Components/MapSection/MapSection';
 import TextSection from './Components/TextSection/TextSection';
 import QRSelector from './Components/QRSelector/QRSelector';
 import { ACCOUNT_LINK } from './Constants';
+import Footer from './Components/Footer/Footer';
 
 
 function App() {
@@ -48,6 +49,7 @@ function App() {
           <QRSelector/>
           <MapSection/>
         </div>
+        <Footer/>
       </div>
     </div>
   );

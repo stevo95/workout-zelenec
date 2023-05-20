@@ -1,0 +1,47 @@
+.footerContainer {
+    height: 120px; width: 100%;
+    background-color: rgba(110, 240, 0, 0.9);
+    display: flex; align-items: center; justify-content: space-between;
+    padding-left: 20px; box-sizing: border-box;
+    font-family: 'Bitter', serif;
+}
+
+.footerLeft, .footerRight {
+    height: 100%; width: 37.5%;
+    display: flex; align-items: center;
+}
+
+.footerLeft {
+    justify-content: flex-end;
+    padding-right: 5%; box-sizing: border-box;
+}
+
+.footerRight {
+    padding-left: 5%; box-sizing: border-box;
+}
+
+.footerCenter {
+    height: 100%; width: 25%;
+    display: flex; align-items: center; justify-content: center;
+}
+
+.linkedInIcon {
+    cursor: pointer;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.linkedInIcon:hover {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 900px) {
+    .footerContainer {
+      background-color: rgba(101, 115, 126, 0.9);
+      color: whitesmoke;
+    }
+
+    .linkedInIcon {
+      background-color: transparent;
+  }
+}
