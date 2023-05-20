@@ -1,0 +1,69 @@
+.galleryContainer {
+  height: 400px; width: 100%;
+  background-color: red;
+  background-color: rgb(255, 255, 255);
+  background-clip: 'cover'; background-position: center; background-repeat: no-repeat;
+  display: flex; justify-content: space-between; align-items: center;
+  transition: all .2s ease-in-out;
+  margin-inline: auto;
+}
+
+.paddingInner {
+    padding-inline: 2%; box-sizing: border-box;
+}
+
+.modelOne {
+    background-image: url('../../resources/gear1.jpeg');
+}
+
+.modelTwo {
+    background-image: url('../../resources/gear2.jpg');
+}
+
+.modelThree {
+    background-image: url('../../resources/gear3.jpg');
+}
+
+.arrows {
+  height: 80%; width: 50px;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex; 
+  justify-content: center; align-items: center;
+  transition: all .2s ease-in-out;
+}
+
+.arrows:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+.arrows {
+  height: 80%; width: 50px;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex; 
+  justify-content: center; align-items: center;
+  transition: all .2s ease-in-out;
+}
+
+.arrows:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 900px) {
+    .topSection {
+      width: 80%;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+  .modelOne {
+    background-image: url('../../resources/gear1_phone.jpeg');
+  }
+  .modelTwo {
+    background-image: url('../../resources/gear2_phone.jpg');
+  }
+  .modelThree {
+    background-image: url('../../resources/gear3_phone.jpg');
+  }
+}

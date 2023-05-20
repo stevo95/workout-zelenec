@@ -1,0 +1,61 @@
+.navbarFixed {
+    height: 80px; width: 100%;
+    background-color: rgb(92, 193, 3);
+    z-index: 10; transition: .5 ease-in-out;
+    display: flex; align-items: center; justify-content: space-between;
+    padding-left: 20px; box-sizing: border-box;
+}
+
+.navbarSticky {
+    height: 80px; width: 100vw;
+    background-color: rgba(110, 240, 0, 0.9);
+    position: fixed; top: 0; z-index: 10; 
+    transition: all .2s ease-in-out;
+    display: flex; align-items: center; justify-content: space-between;
+    padding-left: 20px; box-sizing: border-box;
+}
+
+.logo {
+    height: 80px;
+}
+
+.navbarRight {
+    height: 100%;
+    display: flex;
+}
+
+.textWhite {
+    color: whitesmoke;
+}
+
+.button {
+    height: 100%; width: 130px;
+    display: flex; justify-content: center; align-items: center;
+    transition: all .1s ease-in-out;
+  }
+  
+.button:hover {
+    background-color: rgba(15, 90, 80, 0.40);
+    cursor: pointer;
+}
+
+.buttonHighlighted {
+    height: 100%; width: 130px;
+    background-color: rgba(15, 90, 80, 0.20);
+    display: flex; justify-content: center; align-items: center;
+    transition: all .1s ease-in-out;
+}
+
+.buttonHighlighted:hover {
+    background-color: rgba(15, 90, 80, 0.40);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 900px) {
+    .navbarFixed {
+      background-color: rgba(101, 115, 126, 1);
+    }
+    .navbarSticky {
+      background-color: rgba(101, 115, 126, 0.9);
+    }
+}

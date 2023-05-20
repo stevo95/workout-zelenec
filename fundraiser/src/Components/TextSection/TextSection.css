@@ -1,0 +1,35 @@
+.textSection {
+    height: auto; width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.title {
+    font-family: 'Bitter', serif;
+    margin-bottom: 5%;
+}
+
+.paddingInner {
+    padding-inline: 2%; box-sizing: border-box;
+}
+
+.large {
+    font-size: 40px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.left {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+}
+
+@media only screen and (max-width: 900px) {
+    .textSection {
+        width: 100%;
+    }
+} 

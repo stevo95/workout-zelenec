@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,900;1,800;1,900&display=swap');
+
+.App {
+  display: block; box-sizing: border-box;
+  height: 100vh; width: 100vw;
+  text-align: center;
+  background-position: center; background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('./resources/bckgrnd.jpeg');
+}
+
+.contentWrapper {
+  display: flex; flex-direction: column;
+  justify-content: center; align-items: center;
+  margin: auto;
+  height: auto; width: 50%;
+  background-color: white;
+}
+
+.blockWrapper {
+  display: block;
+  overflow-y: scroll;
+  height: 100%;
+  margin: auto; padding: 0;
+}
+
+.footer {
+  height: 100px; width: 100%;
+  background: linear-gradient(white, rgb(96, 96, 96));
+}
+
+@media only screen and (max-width: 900px) {
+  .contentWrapper {
+    width: 100%;
+  }
+}
+

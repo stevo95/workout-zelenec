@@ -1,0 +1,31 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Backend for fundraiser page",
+  "main": "index.js",
+  "author": "Stefan Sarmir",
+  "license": "MIT",
+  "_moduleAliases": {
+    "baseUrl": ".",
+    "/opt/lambda_example_npm_packages/nodejs/node_modules": "node_modules",
+    "/opt": "layers"
+  },
+  "scripts": {
+    "build": "node ./scripts/build.js"
+  },
+  "dependencies": {
+    "aws-lambda": "^1.0.7",
+    "cheerio": "^1.0.0-rc.12",
+    "chrome-aws-lambda": "^10.1.0",
+    "modclean": "^3.0.0-beta.1",
+    "node-fetch": "^2.6.11",
+    "puppeteer-core": "^10.1.0"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.114",
+    "@types/node": "^18.15.5",
+    "@types/node-fetch": "^2.6.3",
+    "puppeteer": "^20.2.0",
+    "serverless-esm-layer": "^1.1.0"
+  }
+}

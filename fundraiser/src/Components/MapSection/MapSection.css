@@ -1,0 +1,31 @@
+.mapSection {
+  height: auto; width: 100%;
+  background-color: rgb(255, 255, 255);
+  padding: 25px; box-sizing: border-box;
+  display: flex; justify-content: center; align-items: center;
+  margin-inline: auto;
+}
+
+.map {
+  height: 500px; width: 500px;
+  border: 0;
+}
+
+@media only screen and (max-width: 700px) {
+  .map {
+    height: 300px; width: 350px;
+    border: 0;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .mapSection {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .mapSection {
+    width: 100%;
+  }
+}
