@@ -1,9 +1,9 @@
 import { useCallback, useMemo, useState } from 'react';
-import five from '../../resources/5.jpeg'
-import twentyFive from '../../resources/25.jpeg'
-import fifty from '../../resources/50.jpeg'
-import hundred from '../../resources/100.jpeg'
-import fiveHundred from '../../resources/500.jpeg'
+import five from '../../resources/5.png'
+import twentyFive from '../../resources/25.png'
+import fifty from '../../resources/50.png'
+import hundred from '../../resources/100.png'
+import fiveHundred from '../../resources/500.png'
 import './QRSelector.css';
 
 const QRSelector = () => {

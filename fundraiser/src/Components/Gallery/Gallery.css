@@ -13,15 +13,15 @@
 }
 
 .modelOne {
-    background-image: url('../../resources/gear1.jpeg');
+    background-image: url('../../resources/gear1.png');
 }
 
 .modelTwo {
-    background-image: url('../../resources/gear2.jpg');
+    background-image: url('../../resources/gear2.png');
 }
 
 .modelThree {
-    background-image: url('../../resources/gear3.jpg');
+    background-image: url('../../resources/gear3.png');
 }
 
 .arrows {
@@ -58,12 +58,12 @@
 
 @media only screen and (max-width: 1300px) {
   .modelOne {
-    background-image: url('../../resources/gear1_phone.jpeg');
+    background-image: url('../../resources/gear1_phone.png');
   }
   .modelTwo {
-    background-image: url('../../resources/gear2_phone.jpg');
+    background-image: url('../../resources/gear2_phone.png');
   }
   .modelThree {
-    background-image: url('../../resources/gear3_phone.jpg');
+    background-image: url('../../resources/gear3_phone.png');
   }
 }
