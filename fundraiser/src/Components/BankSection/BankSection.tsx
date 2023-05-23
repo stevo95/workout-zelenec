@@ -58,12 +58,15 @@ const BankSection = forwardRef<HTMLDivElement, {}>((props, ref) => {
                 :
                 <div className='bankInfo paddingInner'>
                     <div className='progressSection'>
+                        <div className="titleSmaller">
+                            Vyzbieraná suma / Cieľová suma
+                        </div>
                         <div className='progress title'>
                             <div className='animatedWrapper'>
                                 <Number n={balance ? balance : 0}/> €
                             </div> 
                             <div className='slashWrapper'>/</div>
-                            <div className='goalWrapper'>{FUND_GOAL}€</div>
+                            <div className='goalWrapper'>10 000€</div>
                         </div>
                         <ProgressBar 
                             className='barWrapper'

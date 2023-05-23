@@ -9,6 +9,12 @@
     font-size: 25px;
 }
 
+.titleSmaller {
+    font-family: 'Bitter', serif;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
 .animatedWrapper {
     display: flex; width: 37.5%;
 }

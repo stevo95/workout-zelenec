@@ -42,9 +42,12 @@ function App() {
           <TextSection/>
           <BankSection ref={divRef}/>
           <p className='left paddingInner'>
-              Pre detailné informácie o účte klikni <a target='_blank' rel='noreferrer' href={ACCOUNT_LINK}>SEM</a>.
-              Kliknutím budeš presmerovaný na stránku transparentného účtu kde je možné získať informácie o možnosti prevodu alebo 
-              vyber jednu z možností nižšie a vykonaj prevod použitím vygenerovaného QR kódu.
+              <strong>
+                Pre detailné informácie o účte kliknite <a target='_blank' rel='noreferrer' href={ACCOUNT_LINK}>SEM</a>.
+                Kliknutím budete presmerovaný na stránku transparentného účtu, 
+                kde je možné získať informácie o možnosti prevodu alebo vyberte 
+                jednu z možností nižšie a vykonajte prevod použitím vygenerovaného QR kódu.
+              </strong>
           </p>
           <QRSelector/>
           <MapSection/>

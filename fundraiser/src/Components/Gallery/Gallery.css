@@ -50,6 +50,22 @@
   cursor: pointer;
 }
 
+.imageOne {
+  width: 60%;
+}
+
+.imageTwo {
+  width: 70%;
+}
+
+.imageThree {
+  width: 50%;
+}
+
+.imageFour {
+  width: 60%;
+}
+
 @media only screen and (max-width: 900px) {
     .topSection {
       width: 80%;
