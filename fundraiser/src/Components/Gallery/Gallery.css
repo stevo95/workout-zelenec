@@ -52,18 +52,22 @@
 
 .imageOne {
   width: 60%;
+  transition: all .2s ease-in-out;
 }
 
 .imageTwo {
   width: 70%;
+  transition: all .2s ease-in-out;
 }
 
 .imageThree {
   width: 50%;
+  transition: all .2s ease-in-out;
 }
 
 .imageFour {
   width: 60%;
+  transition: all .2s ease-in-out;
 }
 
 @media only screen and (max-width: 900px) {
