@@ -5,3 +5,7 @@ This is a Fundraiser app created for a community project building a Caelesthetic
 ## Stack
 
 Built in React, using a single AWS Lambda function in the back end for trasnaprent bank account scraping.
+
+## Commands
+
+pngcrush -ow asset.png  # Improves compression of an image without sacrificing quality

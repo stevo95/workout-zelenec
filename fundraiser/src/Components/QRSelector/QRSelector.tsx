@@ -1,5 +1,5 @@
 import { useCallback, useMemo, useState } from 'react';
-import five from '../../resources/5.png'
+import ten from '../../resources/10.png'
 import twentyFive from '../../resources/25.png'
 import fifty from '../../resources/50.png'
 import hundred from '../../resources/100.png'
@@ -8,9 +8,9 @@ import './QRSelector.css';
 
 const QRSelector = () => {
     const [selectedIndex, setSelectedIndex] = useState<number>(0);
-    const options = useMemo(() => [5, 25, 50, 100, 500], []);
+    const options = useMemo(() => [10, 25, 50, 100, 500], []);
     const optionsImageUrls: { [key: number]: string } = {
-        0: five,
+        0: ten,
         1: twentyFive,
         2: fifty,
         3: hundred,

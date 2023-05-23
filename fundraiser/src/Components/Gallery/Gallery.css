@@ -1,7 +1,5 @@
 .galleryContainer {
   height: 400px; width: 100%;
-  background-color: red;
-  background-color: rgb(255, 255, 255);
   background-clip: 'cover'; background-position: center; background-repeat: no-repeat;
   display: flex; justify-content: space-between; align-items: center;
   transition: all .2s ease-in-out;
@@ -10,18 +8,6 @@
 
 .paddingInner {
     padding-inline: 2%; box-sizing: border-box;
-}
-
-.modelOne {
-    background-image: url('../../resources/gear1.png');
-}
-
-.modelTwo {
-    background-image: url('../../resources/gear2.png');
-}
-
-.modelThree {
-    background-image: url('../../resources/gear3.png');
 }
 
 .arrows {
@@ -74,16 +60,4 @@
     .topSection {
       width: 80%;
     }
-}
-
-@media only screen and (max-width: 1300px) {
-  .modelOne {
-    background-image: url('../../resources/gear1_phone.png');
-  }
-  .modelTwo {
-    background-image: url('../../resources/gear2_phone.png');
-  }
-  .modelThree {
-    background-image: url('../../resources/gear3_phone.png');
-  }
 }
