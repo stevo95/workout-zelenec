@@ -2,7 +2,7 @@ import './BankSection.css';
 import { ColorRing } from 'react-loader-spinner'
 import ProgressBar from '@ramonak/react-progress-bar';
 import { useSpring, animated } from 'react-spring';
-import { forwardRef, useEffect, useState } from 'react';
+import { forwardRef } from 'react';
 import { FUND_GOAL } from '../../Constants';
 
 const Number = ({ n }: {n: number}) => {
@@ -18,17 +18,18 @@ const Number = ({ n }: {n: number}) => {
 }
 
 const BankSection = forwardRef<HTMLDivElement, {}>((props, ref) => {
-    const [loading, setLoading] = useState<boolean>(false);
-    const [balance, setBalance] = useState<number | undefined>();
-
-    const processBalance = (balance: string): void => {
-        const i = balance.indexOf(',');
-        const subString = balance.slice(0, i);
-        const removedSpaces = subString.replace(/\s+/g, '');
-        setBalance(parseInt(removedSpaces));
-    }
-
     // This used to be used to get balance from bank, but is now deactivated as the fundraiser is over and the bank account is closed.
+
+    // const [loading, setLoading] = useState<boolean>(false);
+    // const [balance, setBalance] = useState<number | undefined>();
+
+    // const processBalance = (balance: string): void => {
+    //     const i = balance.indexOf(',');
+    //     const subString = balance.slice(0, i);
+    //     const removedSpaces = subString.replace(/\s+/g, '');
+    //     setBalance(parseInt(removedSpaces));
+    // }
+
     // useEffect(() => {
     //     if (!balance) {
     //         getBalance()
@@ -43,6 +44,10 @@ const BankSection = forwardRef<HTMLDivElement, {}>((props, ref) => {
     //             });
     //     }
     // }, [balance]);
+
+    // Placeholder because original bank account is closed.
+    const balance = 5000;
+    const loading = false;
 
     const calculateProgress = () => {
         if (!balance) return 0;
