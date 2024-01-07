@@ -4,7 +4,6 @@ import ProgressBar from '@ramonak/react-progress-bar';
 import { useSpring, animated } from 'react-spring';
 import { forwardRef, useEffect, useState } from 'react';
 import { FUND_GOAL } from '../../Constants';
-import { getBalance } from '../../Services/BankService';
 
 const Number = ({ n }: {n: number}) => {
     const { number } = useSpring({
@@ -19,7 +18,7 @@ const Number = ({ n }: {n: number}) => {
 }
 
 const BankSection = forwardRef<HTMLDivElement, {}>((props, ref) => {
-    const [loading, setLoading] = useState<boolean>(true);
+    const [loading, setLoading] = useState<boolean>(false);
     const [balance, setBalance] = useState<number | undefined>();
 
     const processBalance = (balance: string): void => {
@@ -29,20 +28,21 @@ const BankSection = forwardRef<HTMLDivElement, {}>((props, ref) => {
         setBalance(parseInt(removedSpaces));
     }
 
-    useEffect(() => {
-        if (!balance) {
-            getBalance()
-                .then((res) => {
-                    if (!res?.Data) {
-                        console.error('ERROR: Failed to get balance from bank.');
-                        return;
-                    }
-                    const balance = JSON.parse(res?.Data?.balance);
-                    processBalance(balance);
-                    setLoading(false);
-                });
-        }
-    }, [balance]);
+    // This used to be used to get balance from bank, but is now deactivated as the fundraiser is over and the bank account is closed.
+    // useEffect(() => {
+    //     if (!balance) {
+    //         getBalance()
+    //             .then((res) => {
+    //                 if (!res?.Data) {
+    //                     console.error('ERROR: Failed to get balance from bank.');
+    //                     return;
+    //                 }
+    //                 const balance = JSON.parse(res?.Data?.balance);
+    //                 processBalance(balance);
+    //                 setLoading(false);
+    //             });
+    //     }
+    // }, [balance]);
 
     const calculateProgress = () => {
         if (!balance) return 0;

@@ -3,7 +3,7 @@ import axios from 'axios';
 export const getBalance = async () => {
     try {
         const result = await axios.get(
-            'https://72lc0o1ebf.execute-api.eu-central-1.amazonaws.com/Stage/scrape', 
+            process.env.REACT_APP_API_URL + '/bank/balance',
             { timeout: 30000 }
         );
         return result.data;
